@@ -45,6 +45,7 @@ public class AwsController {
                 saveBucketsToDatabase(buckets);
                 finalJob.setStatus("Success");
             }
+
             finalJob.setStatus("");
             discoveryJobRepository.save(finalJob);
         });
